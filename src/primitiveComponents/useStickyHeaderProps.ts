@@ -32,10 +32,12 @@ export function useStickyHeaderProps(
     onTabsLayout,
     stickyTabs = true,
     style,
+    initialHeaderHeight = 0,
+    initialTabsHeight = 0,
   } = props;
 
-  const [headerHeight, setHeaderHeight] = useState(0);
-  const [tabsHeight, setTabsHeight] = useState(0);
+  const [headerHeight, setHeaderHeight] = useState(initialHeaderHeight);
+  const [tabsHeight, setTabsHeight] = useState(initialTabsHeight);
 
   const scrollValue = useSharedValue(0);
 

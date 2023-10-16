@@ -31,6 +31,8 @@ export interface StickyHeaderSharedProps {
   renderTabs?: () => ReactElement | null;
   stickyTabs?: boolean;
   style?: StyleProp<ViewStyle>;
+  initialHeaderHeight?: number;
+  initialTabsHeight?: number;
 }
 
 export interface StickyHeaderSnapProps {
